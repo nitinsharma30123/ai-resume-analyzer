@@ -1,16 +1,39 @@
-# React + Vite
+﻿# AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive resume analyzer that compares a resume with a job description, identifies matched and missing skills, and provides recommended improvements.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- PDF resume upload
+- Browser-based PDF text extraction
+- Job description analysis
+- Technical skill matching
+- Overall resume match score
+- Matched and missing skills
+- Dynamic improvement recommendations
+- Responsive mobile-friendly interface
+- Animated result progress bar
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- pdfjs-dist
 
-## Expanding the Oxlint configuration
+## How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Upload a PDF resume.
+2. Paste a target job description.
+3. Extract resume text.
+4. Detect technical skills.
+5. Compare resume skills with job requirements.
+6. Calculate the match percentage.
+7. Show missing skills and recommendations.
+
+## Run Locally
+
+`ash
+npm install
+npm run dev
